@@ -9,6 +9,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>simpleServlet</servlet-name>
-        <url-pattern>/simple</url-pattern><!-- http://localhost:9080/webapp01/simple -->
+        <url-pattern>/</url-pattern><!-- http://localhost:9080/ -->
     </servlet-mapping>
 </web-app>
