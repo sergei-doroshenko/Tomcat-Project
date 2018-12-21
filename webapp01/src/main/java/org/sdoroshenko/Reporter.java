@@ -1,4 +1,4 @@
-package org.sergei;
+package org.sdoroshenko;
 
 public class Reporter {
     Message report(String input) {

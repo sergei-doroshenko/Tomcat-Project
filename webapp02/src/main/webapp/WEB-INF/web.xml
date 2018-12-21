@@ -5,7 +5,7 @@
 
     <servlet>
         <servlet-name>simpleServlet</servlet-name>
-        <servlet-class>org.sergei.SimpleServlet</servlet-class>
+        <servlet-class>org.sdoroshenko.SimpleServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>simpleServlet</servlet-name>

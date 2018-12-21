@@ -1,4 +1,4 @@
-package org.sergei;
+package org.sdoroshenko;
 
 public class Message {
 
