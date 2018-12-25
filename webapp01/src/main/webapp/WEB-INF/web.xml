@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
     <servlet>
-        <servlet-name>simpleServlet</servlet-name>
-        <servlet-class>org.sdoroshenko.SimpleServlet</servlet-class>
+        <servlet-name>messageServlet</servlet-name>
+        <servlet-class>org.sdoroshenko.MessageServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>simpleServlet</servlet-name>
-        <url-pattern>/</url-pattern><!-- http://localhost:9080/ -->
+        <servlet-name>messageServlet</servlet-name>
+        <url-pattern>/message</url-pattern><!-- http://localhost:9080/ -->
     </servlet-mapping>
 </web-app>
