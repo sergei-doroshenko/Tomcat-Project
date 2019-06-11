@@ -1,0 +1,21 @@
+$ docker build -t eg_sshd .
+
+$ docker run -rm -d -P --name test_sshd eg_sshd
+6571f9d4912f2ff8a83bad3fb986925e9ed825752f99e5c5e3b143cac13a1f00
+
+$ docker port test_sshd 22
+0.0.0.0:32770
+
+$ ssh root@localhost -p 32770
+
+$ docker container ls
+CONTAINER ID        IMAGE               COMMAND               CREATED             STATUS              PORTS                                            NAMES
+6571f9d4912f        eg_sshd             "/usr/sbin/sshd -D"   2 minutes ago       Up 2 minutes        0.0.0.0:32770->22/tcp                            test_sshd
+aa142a6d0162        webapp01            "catalina.sh run"     23 minutes ago      Up 23 minutes       0.0.0.0:52022->22/tcp, 0.0.0.0:8888->8080/tcp    distracted_aryabhata
+8e4d49a934a6        f9df697a11ba        "catalina.sh run"     45 minutes ago      Up 45 minutes       0.0.0.0:32769->22/tcp, 0.0.0.0:32768->8080/tcp   elated_snyder
+
+$ docker container kill 6571f9d4912f
+6571f9d4912f
+
+$ docker rm 69434a713f473a84c51e0606f94ff7226d323013e80b32f7791a8ead9db6764c
+69434a713f473a84c51e0606f94ff7226d323013e80b32f7791a8ead9db6764c

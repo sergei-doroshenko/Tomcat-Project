@@ -9,3 +9,7 @@ Run built image:
 
 Launch an application on localhost: 
 `http://localhost:8888/webapp01/message?name=Andrew`
+
+`docker inspect webapp01`
+
+`curl http://localhost:8080/webapp01/message?name=Andrew`
