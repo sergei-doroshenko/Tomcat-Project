@@ -58,3 +58,8 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
+
+# ClamAV files
+dockerbuild/clamav-docker/*.cvd
+dockerbuild/clamav-docker/*.tar.gz
+dockerbuild/clamav-docker-2/*.cvd
